@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    unsigned char temp[]="１２３４５ＡＢＣＤＥＦＧａｂｃｄｅｆｇ轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩。那河畔的金柳，是夕阳中的新娘；波光里的艳影，在我的心头荡漾。";     
+
+for (int i=0;i<strlen((const char *)temp);i++)
+    {
+        printf("%x",temp[i]);
+        if (i%2) printf(" ");
+    }
+}
+
